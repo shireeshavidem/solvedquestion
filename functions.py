@@ -134,21 +134,21 @@
 # print(sorted([4,5,2,8,4,1,2,5,3,2]))
 # print(sorted("my Name is Siri".split(),key = str.lower))
 #method 1
-# class VS:
-#     def __init__(self,a,b):
-#         self.a = a
-#         self.b = b
-#     def __repr__(self):
-#         return str((self.a, self.b))
-# vs = [VS("My",2),
-#       ("name",4),
-#       ("Is",2),
-#       ("siri",4)]
-# print(sorted(vs, key=lambda x: x.a.lower()))        
+class VS:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def __repr__(self):
+        return str((self.a, self.b))
+vs = [VS("My",2),
+      ("name",4),
+      ("Is",2),
+      ("siri",4)]
+print(sorted(vs, key=lambda x: x.b))        
 
 # Python program to illustrate
 # *args for variable number of arguments
-def myFun(*argv):
-    for arg in argv:
-        print(arg)
-myFun('Hello', 'Welcome', 'to', 'python')
+# def fun(*argv):
+#     for arg in argv:
+#         print(arg)
+# fun('Hello', 'Welcome', 'to', 'python')
