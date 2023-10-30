@@ -57,10 +57,15 @@ for i in range(0,n):
 #     list = end,*middle,start
 #     return list
 # print(change (list)) 
-
+ 
 #5
-def interchangelist(list):
-    if len(list) >= 2:
-        list = list[-1:] + list[1:-1] + list[:1]
-    return list
-print(interchangelist(list))    
+# def interchangelist(list):
+#     if len(list) >= 2:
+#         list = list[-1:] + list[1:-1] + list[:1]
+#     return list
+# print(interchangelist(list))
+
+#program to swap 2 elements in a list
+def swap_ele(list):
+    pos1,pos2 = input("pos1","pos2")
+ 
