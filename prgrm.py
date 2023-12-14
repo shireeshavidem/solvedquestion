@@ -35,11 +35,19 @@
 #         flattened_list.append(ele)
 # print(flattened_list) 
 
-isinstance(student, person)
-print(typr(student))
+# isinstance(student, person) #instance variable
+# print(typr(student))
 
     
+# num = input("Enter the num: ")
+# print(str(num)[::-1])
 
 
-    
-
+num = int(input("Enter a num: "))
+lst = ([int(i) for i in str(num)])
+len = len(lst)
+sum = sum([i**3 for i in lst])
+if sum == num:
+    print(f"{num} is armstrong")
+else:
+    print(f"{num} is not armstong")
